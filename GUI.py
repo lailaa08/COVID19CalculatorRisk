@@ -158,15 +158,15 @@ def calculateScore():
 
     a = int(age)
 
-    if a < 0:
+    if a < 0 or 40 > a > 0:
         score = score + 0
-    elif 49 > a > 40:
+    elif 49 >= a >= 40:
         score = score + 1
-    elif 59 > a > 50:
+    elif 59 >= a >= 50:
         score = score + 2
-    elif 69 > a > 60:
+    elif 69 >= a >= 60:
         score = score + 3
-    elif a > 70:
+    elif a >= 70:
         score = score + 13
 
     return score
